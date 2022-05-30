@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #navbar {
+
+            padding: 0px 10%;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+            border: 2px solid red transparent;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        #navbar>div {
+            display: flex;
+            border: 1px solid transparent;
+
+
+        }
+
+        #navbar>div:nth-child(1) {
+            height: 100%;
+            background-color: cadetblue;
+            color: rgb(255, 255, 255);
+            align-items: center;
+
+
+        }
+
+        #navbar>div:nth-child(2) {
+            border: 1px solid salmon  transparent ;
+            width: 55%;
+            justify-content: space-evenly;
+
+        }
+
+        #navbar>div:nth-child(2)>h2:hover {
+
+            cursor: pointer;
+            color: rgb(103, 105, 107);
+        }
+
+
+        
+        #box{
+           
+            display: flex ;
+         width: 90%;
+         margin :50px  auto;
+         justify-content: space-between;
+           
+            
+        }
+
+        #box>div {
+            
+            width: 45%;
+           
+             justify-content: space-between;
+       
+          
+            border: 1px solid transparent ;
+
+        }
+
+
+        #box>div>h4{
+            color: rgb(69, 69, 225);
+        }
+
+        
+        #box>div>h1{
+             font-size:45px ;
+        }
+
+        #box>div>p{
+
+             font-size: 18px;
+             line-height: 24px;
+             color: gray;
+        }
+
+        #box>div:nth-child(2)
+        {
+             display: flex;
+             justify-content: space-between;
+             flex-wrap: wrap;
+        }
+
+        #box>div:nth-child(2)>div{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            width: 40%;
+            margin-top: 20px;
+          
+        }
+
+        #box>div:nth-child(2)>div>img{
+            width: 100px;
+        }
+        p{
+            color: grey;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="navbar">
+        <div>
+            <h1>STUDY LAB</h1>
+        </div>
+        <div>
+            <h2>HOME</h2>
+            <h2>ABOUT</h2>
+            <h2>COURSE</h2>
+            <h2>INSTUCTOR</h2>
+            <h2>BLOG</h2>
+            <h2>CONTACT</h2>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div id="box">
+
+        <div>
+            <h4>Welcome to STUDY LAB</h4>
+
+            <h1>We Are StudyLab An Online Learning Center</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatum omnis illum, cupiditate
+                quia nam placeat, tempora voluptas laboriosam, commodi nemo aperiam ut ratione odit. Quae maiores
+                eveniet amet earum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptatum omnis illum, cupiditate
+                quia nam placeat, tempora voluptas laboriosam, commodi nemo aperiam ut ratione odit. Quae maiores
+                eveniet amet earum.</p>
+
+
+        </div>
+
+        <div>  
+        <div>
+            <img src=" data:image/png;base64,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"
+                alt="error">
+            <h2>Top Quality Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
+
+        </div>
+        <div>
+            <img src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAAAh1BMVEUAAAD////7+/v5+fnz8/Pn5+f29vbv7+/a2trs7Ozg4ODx8fEuLi7b29u8vLzq6urIyMidnZ3CwsJFRUWQkJCDg4MfHx+np6eWlpZoaGizs7MXFxdMTEzOzs6hoaF4eHhsbGxBQUFgYGBTU1Nra2t8fHwkJCQ5OTkMDAwqKiqurq4YGBgzMzOoq4CrAAAHt0lEQVR4nO2baXuiPBSGCTsRkC1sGkCoS53+/9/3JiAaLNJeo2/Fzrk/zKCGSI5nebJUkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgrjTre3sIN4dHPMjM+bMNVHVzby+1pZrp3RafN4QiZB3393e0MxDryY/v72me2JmMMELBYzpDLV7zkN5mRlRQ6aOpF8h9TH9pZyzklI/pbz4cpESKeMSk0d3J6oRxMhbC2YN6nAXfL1qxLbz4M9n0iM44vyfN/2V9z7aTH1dIwN393XfMjLOl1u/faOxfrp1osmkt2sqRf1WSb+yj/iFl1WSjApH+co/yyaaZaCsDL8kDpMhTWR3C/vLoWdkf6VBPtqfI7C/zy+Uob6Kt0NIyFtWdD/tcEtos+pqeIPR1wdIQOtXJg7c1JpuaA1tVLtLQK3uW16bdtrSluZqQNhlNZXquMIvucotMPFUIm4GpUMFmBCjYrh716D8N7oZxLF235tJRT7+qVmsLIa275G4zJQWMoa0CxdXZ91mvaawDFnPvgfuYsg+n74lK1qoN2j2/a0I0UHSNrK7TRLemRdlMwYORuBr/V0FuZEvxTfGwanImm2ji0kV7083Oqdx1qwysZUo2Xb6gsYapV0TX5Wrixi278xRgtwrhZoGCTjKoQ//SibQhL7e05V4Z6Cpm8qlg3FXFydKjH7/nmAe0M/pDqJZPRu+aL1H35JHWj6FuhGSs4HJdj1hrf5kNfrQhPDLPjo9d+OkjKevkXP7nu2ZM82kAbm6dLWU2UszaZPF10Trrr5pdFSyM0+uOs7OBcHrLVsj538f3SE55Xbs8v9xfBMezEjjs3sNQzC5F0ImK2PQx1/f5IJw2ZaAObDJI7GevYnEYvFDK6tNNIoyBLx9TNlYZ+4Js2itHmkTl2t6tVgcbIy0kmZkWzMphlaX7LLb3e+59GZshXRllGcRH8bUbIZf13+rf14nC/cjPTdeUGum2vY4ESbqSlgOvyEspUpGmB934j3bY5rBD+MlDsTQstq5URs7pjelZ95y4mUjcThfJ60ZQWNFmmZ8jlA8ykd/Or9Vzs63ZhZwcLlO/M5ZbpULnsuHlcfdjyNb0DH0+1CfhOQIhemsB5Bfn5gSJnsXk56HaGn1iwnVAVl2GX2/UvglpDcK6MmWxd4SjPlAX9q2nmxcUWZ1JJsCm7/aiwRpYNs3X71xeaHnOsndYYx05VZurM7OTVDrxvugdnWeVMyf8chx4TZFGcP/TE2KMNuO5xyxab2rr4WYl1Z462vSC0ovgl9jeyb/+0fHS0ZGGk/6W+KYbUnPVF7Y3gklsfulSvTHpM23wXSbGcUna3f9ZXxCpLlgLI7G8lVLM0xMNMfMZ7jTyzdIx5AXm0NubD5+UcmcR3T+9o/Rl7v0gzO4UNFiiYGntoFlt0na/kajOfNL886PLF7gfrqCtNSpfjwf3tX03UQwWQS15G+5r+qcOJpherZ8FXZ4uTzNCv9bQ5AD7WcyuvN3GJTwLauYycF1vvA6MID/VDN/ho7WMh1IV6ZpjBlmSk/X1Ao3w49Pz4qcvvK0kbYo2Wq3Jal9aS4G0P/JmYi5zhMiVF9g0TU1wvdnrUeYesual2+YyfX3fNCRNhGA0BE/LzKgmbX0PRWOlxOTWoiXdkmMcIKyX21h6y9/YN9CzBg2oy7s1G2lzOV20Css00FhMT2/FzoBtUo/vPNXUNJnA5EN0++SktEOmCurUA8tJ7ScmSZHm+xV2S67BWEGLNOTluVRpzLU+mAdiM+q0e4K0dHTZ0K796S3+uVMHVSRGoE7NpXfUeuH4lkfvPFwDSQqQpQ0W+ijmqS1AhUvtQGMzpLCtHs7sA+0eyGBGg3nsJO2S1prZSUmlgrmbUkqmgdJY2nnnJYk88OyGFInqeOVC6WScWj1tGD/AWioHK3RB9MEyUHtuo1vsMrqJNOXBeMwbS9zyyfnH3pIFrkKkYoG033E45ha7azmpBJJn6XxCkqBPJB7yzrcGNc9ueNF9pEay8pr7pt9n3aZzWVDmbPCaY1yt+XVwsS6fUrdbNHxyI19qaPXMcfwI7WwuIIIXUVbwc59nqFGq7j4ep7UpyKfXWHW5C2IZaCGj/DKpke1OYEmRjK8X1TmYZTl7H7eCrYnL1spFjpLJr/kV1Fqr4p2kDG07LAvKc70fnWp/OmIr5KgBC1Uu23bvzGIpdhaFN3XY4bfAJ4qYiGk5C3hgaZ21RjJ8G6eDpbs1K4KvsZh3HxmyPo3S9pm1km4nVUEqWlxZ6vNfWtTJv2CraHw/ivmT2hCpSS20yIvBcp47+pckLz6F+Ra3Nlj2fAHBSzBF0aawLpl/+asOGD+KBHETBWTpuXxDeekF1tQRrH+biq8zI60/OBJJ6/TVzgf9HCE6mgbd9lsX6r+Qv/8a+yAhJ6+qrNu5env288yaMD22OsvnChW8ahpCMC98lTtyUA24Imo3q/ylsBoD3OLoM4OZ6uK3r049BFXmx4x+9UL6w/D5jiBo0O/BF7Fe6HTsU3l7iYMbM8HRn/0Er0M1++11AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALiD/wCJgmhmZFVGOQAAAABJRU5ErkJggg=="
+                alt="error">
+            <h2>Top Quality Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
+
+        </div>
+        <div>
+            <img src=" data:image/png;base64,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"
+                alt="error">
+            <h2>Top Quality Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
+
+        </div>
+        <div>
+            <img src=" data:image/png;base64,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"
+                alt="error">
+            <h2>Top Quality Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, unde?</p>
+
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
